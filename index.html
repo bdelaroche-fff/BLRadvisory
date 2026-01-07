@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLR Yachting Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="BLR Yachting Services Logo" class="logo">
+            <h1>BLR Yachting Services</h1>
+            <p class="tagline">Bespoke marine conciergerie</p>
+        </header>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Charter Brokerage</h3>
+                    <p>Expert guidance to find the perfect yacht charter for your needs</p>
+                </div>
+                <div class="service-card">
+                    <h3>Purchase Advisory</h3>
+                    <p>Professional consultation for your yacht acquisition journey</p>
+                </div>
+                <div class="service-card">
+                    <h3>Trip Design</h3>
+                    <p>Customized sailing adventures tailored to your dreams</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>Our Clients</h2>
+            <div class="bio-container">
+                <div class="bio">
+                    <p>
+                        Our clients are high net worth individuals who have grown dissatisfied with 
+                        standard agencies and their one-size-fits-all approach. They seek a fully 
+                        tailored, adaptive, and discreet experience that reflects their unique 
+                        preferences and lifestyle. We understand that true luxury lies in the 
+                        details—in the ability to anticipate needs, adapt to changing circumstances, 
+                        and maintain absolute discretion throughout every interaction. Our clients 
+                        value personalized service that goes beyond transactions, creating meaningful 
+                        relationships built on trust, expertise, and an unwavering commitment to 
+                        excellence.
+                    </p>
+                </div>
+                <div class="bio-image">
+                    <img src="pexels-arnauld-van-wambeke-9600215.jpg" alt="Luxury yachting experience">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>For inquiries, please contact us at your convenience.</p>
+            <div class="contact-info">
+                <a href="mailto:blr.yachtingservices@gmail.com" class="email-link">
+                    blr.yachtingservices@gmail.com
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 BLR Yachting Services. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        // Match image height to text block height
+        window.addEventListener('load', function() {
+            const bio = document.querySelector('.bio');
+            const bioImage = document.querySelector('.bio-image');
+            if (bio && bioImage) {
+                const bioHeight = bio.offsetHeight;
+                bioImage.style.height = bioHeight + 'px';
+                const img = bioImage.querySelector('img');
+                if (img) {
+                    img.style.maxHeight = bioHeight + 'px';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
